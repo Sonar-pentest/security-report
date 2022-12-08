@@ -22,7 +22,7 @@ jobs:
           export SONAR_SCANNER_OPTS="-server"
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
       - name: Build SARIF report
         continue-on-error: true
         run: |
